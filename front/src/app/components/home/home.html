@@ -1,0 +1,11 @@
+<p>Olá Angular</p>
+
+<p>Mostrar lista?</p>
+<button (click)="apresentaLista()">Sim</button>
+<button (click)="escondeLista()">Não</button>
+
+@if(visibilidadeLista){
+    @for( item of lista; track item){
+        <p>{{item}}</p>
+    }
+}
