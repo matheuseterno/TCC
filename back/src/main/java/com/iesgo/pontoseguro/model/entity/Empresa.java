@@ -5,15 +5,13 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-import java.util.UUID;
-
 @Table(name = "empresa")
 @Entity
 public class Empresa {
 
     @Id
     @GeneratedValue
-    private UUID id;
+    private Long id;
 
     private String cnpj;
 

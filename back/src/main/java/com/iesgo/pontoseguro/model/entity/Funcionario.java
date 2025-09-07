@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.UUID;
 
 @Table(name = "funcionario")
 @Entity
@@ -12,7 +11,7 @@ public class Funcionario {
 
     @Id
     @GeneratedValue
-    private UUID id;
+    private Long id;
 
     private String nome;
 

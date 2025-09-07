@@ -4,13 +4,12 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
 @Table(name = "imagem_url")
 @Entity
 public class ImagemURL {
 
-    private UUID id;
+    private Long id;
 
     private String nome;
 

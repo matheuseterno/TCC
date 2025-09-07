@@ -4,7 +4,6 @@ import com.iesgo.pontoseguro.model.converter.Point;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
 @Converter(autoApply = true)
 @Table(name = "registro_de_ponto")
@@ -13,7 +12,7 @@ public class RegistroDePonto {
 
     @Id
     @GeneratedValue
-    private UUID id;
+    private Long id;
 
     private LocalDateTime dataHora;
 
